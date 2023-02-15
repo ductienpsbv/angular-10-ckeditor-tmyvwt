@@ -1,0 +1,9 @@
+<p>This ckeditor in angular 10 :)</p>
+<ckeditor
+[config]="{ toolbar: ['FontFamily', 'bold', 'italic','Underline','Fontsize','FontColor','FontBackgroundColor','Alignment','Numberedlist','Bulletedlist','link'] }"
+  [editor]="editor"
+  [(ngModel)]="name"
+  [data]="data"
+  (ready)="onReady($event)"
+></ckeditor>
+<hello name="{{ name }}"></hello>
